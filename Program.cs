@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
 
 namespace Basics_Text
 {
@@ -108,23 +105,24 @@ namespace Basics_Text
                 Console.WriteLine("The sum of the numbers are: " + sum  );
             */
 
-            
+            /*
+
             //QUESTION 5: Write a program in C# Sharp to insert New value in the array (sorted list).
             //Maximum array size may be limited by fixed number of elements (for example, 10).
 
-            // Declare a fixed array of size 10
+            //Declare a fixed array of size 10
             int[] myarray = new int[10];
             int position = 0;
 
             Console.Write("Enter size of array: ");
-           int  n = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
 
             for (int i = 0; i < n; i++)
             {
                 Console.Write("element {0} : ", i);
                 Console.Write("Elements in array: ");
-                myarray[i] = Convert.ToInt32( Console.ReadLine()); 
+                myarray[i] = Convert.ToInt32(Console.ReadLine());
             }
 
             // Insert new value in the array 
@@ -137,37 +135,35 @@ namespace Basics_Text
                 Console.WriteLine(myarray[i]);
 
             // position of the new element inside the array
-            for (int i=0; i < n; i++) 
+            for (int i = 0; i < n; i++)
             {
 
                 if (Newvalue < myarray[i])
                 {
                     position = i;
-                    
+
                 }
 
             }
-            
+
             for (int i = n; i >= position; i--)
             {
                 myarray[i] = myarray[i - 1];
                 myarray[position] = Newvalue;
             }
 
-            ////sort
-            //Array.Sort(myarray);
-            //foreach (int i in myarray)
-            //{
-            //    Console.Write(i + " ");
-            //}
+          
 
             Console.WriteLine("After insert, new list of array is: ");
-            for(int i = 0; i <= n; i++)
-                Console.WriteLine(myarray[i]);
+            for (int i = 0; i <= n; i++)
+                    Console.WriteLine(myarray[i]);
 
             
 
-            /*
+            */
+
+
+           /*
             //QUESTION 6: Write a C# Sharp program to reverse a given string in uppercase
             var mystring = "";
             var reverse = "";
@@ -200,43 +196,43 @@ namespace Basics_Text
             Console.WriteLine("The sum is {0}",sum);
             */
 
-            
-             /*
-            //QUESTION 8: Write a program in C# Sharp to count the number of digits in a number using recursion
-            Console.Write("Enter a number: ");
-            var number = Convert.ToInt32(Console.ReadLine());
-            int count = 0;
-            while (number > 0 ) 
-            {
-                number = number / 10;
-                count++;
-            }
-            Console.WriteLine("The number of digit is {0}", count);
-             */
-            
 
-            
-             /*
-            //QUESTION 9: Write a program in C# Sharp to display the top n-th records of List collection using LINQ
-            var list = new List<int>() {5, 7, 13, 24, 6, 9, 8, 7};
-            Console.WriteLine("The elements of the list are: ");
-
-            for (int i = 0; i < list.Count; i++)
-                Console.WriteLine(list[i]);
-
-            Console.Write("Enter the n-th records: ");
-            var ntop = Convert.ToInt32(Console.ReadLine());
-
-            list.Sort();
-            list.Reverse();
-
-            Console.WriteLine("The top n-th records of the list are: ", ntop);
-            foreach (int top in list.Take(ntop)) 
-            {
-                Console.WriteLine(top);
-            }
-
+            /*
+           //QUESTION 8: Write a program in C# Sharp to count the number of digits in a number using recursion
+           Console.Write("Enter a number: ");
+           var number = Convert.ToInt32(Console.ReadLine());
+           int count = 0;
+           while (number > 0 ) 
+           {
+               number = number / 10;
+               count++;
+           }
+           Console.WriteLine("The number of digit is {0}", count);
             */
+
+
+
+            /*
+           //QUESTION 9: Write a program in C# Sharp to display the top n-th records of List collection using LINQ
+           var list = new List<int>() {5, 7, 13, 24, 6, 9, 8, 7};
+           Console.WriteLine("The elements of the list are: ");
+
+           for (int i = 0; i < list.Count; i++)
+               Console.WriteLine(list[i]);
+
+           Console.Write("Enter the n-th records: ");
+           var ntop = Convert.ToInt32(Console.ReadLine());
+
+           list.Sort();
+           list.Reverse();
+
+           Console.WriteLine("The top n-th records of the list are: ", ntop);
+           foreach (int top in list.Take(ntop)) 
+           {
+               Console.WriteLine(top);
+           }
+
+           */
 
             /*
             // QUESTION 10: Write a program in C# Sharp to create a file and write an array of strings to the file
